@@ -1,17 +1,26 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int linearSearch(int *arr,int n,int key){
     for(int i = 0;i<n;i++){
         if(arr[i]==key){
-            return i;
+            
+          cout<<"Key:"<<i<<endl;
+           break;
         }
+         
     }
-
+  
 }
 int main(){
-    int arr[] = {6,3,1,5,7,9,0,4};
-    int n = sizeof(arr)/sizeof(int);
-    cout<<linearSearch(arr,n,4);
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i = 0;i<n;i++){
+        cin>>arr[i];
+    }
+    int key;
+    cin>>key;
+    linearSearch(arr,n,key);
 
     return 0;
 }
