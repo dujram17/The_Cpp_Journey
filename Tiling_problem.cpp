@@ -11,7 +11,7 @@ int tilingProblem(int n){ // 2*n
 }
 int main(){
     int n = 3;
-    cout<<tilingProblem(5)<<endl;
+    cout<<tilingProblem(3)<<endl;
     return 0;
 
 }
